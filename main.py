@@ -1,14 +1,14 @@
 
 def nod(a, b):
     if a == b:
-	return a
+        return a
     if b > a:
-	a, b = b, a
+        a, b = b, a
     c = a % b
     if c == 0:
         return b
     else:
-	return nod(b, c)
+        return nod(b, c)
 
 
 def nok(a, b):
